@@ -5,8 +5,6 @@ Author URL: http://templatestock.co
 body {
 	font-family: "DM Sans", sans-serif;
 	font-optical-sizing: auto;
-	/* font-weight: <weight>; */
-	/* font-style: normal; */
 }
 
 body a {
@@ -48,10 +46,6 @@ ul {
 body {
 	padding: 0 0;
 	margin: 0 0;
-	/* font-family: 'Open Sans', sans-serif; */
-	/* background-color: #F2E8CF; */
-
-
 }
 
 .header {
@@ -74,8 +68,6 @@ body {
 }
 
 .logo h1 {
-	/* width: 90px;
-	height: fit-content; */
 	color: #BC4749;
 	font-size: 2em;
 }
@@ -185,14 +177,12 @@ nav a:focus {
 
 .banner_center h1 {
 	color: #fff;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-size: 2.4em;
 }
 
 .banner_center h2 {
 	color: #fff;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-size: 2.4em;
 	padding: 7px 0;
@@ -254,15 +244,10 @@ ul.wmuSliderPagination {
 
 .services-header h3 {
 	font-size: 2.5em;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #333333;
 }
-
-/* .services-header h3 span {
-	color: #F0C514;
-} */
 
 .services-header p {
 	line-height: 1.5em;
@@ -308,15 +293,10 @@ ul.wmuSliderPagination {
 
 .works-header h3 {
 	font-size: 2.5em;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #1C1C1C;
 }
-
-/* .works-header h3 span {
-	color: #fefefe;
-} */
 
 .works-header p {
 	line-height: 1.5em;
@@ -529,7 +509,6 @@ ul.wmuSliderPagination {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	/* font-family: 'Open Sans', sans-serif; */
 	font-weight: 300;
 	overflow: hidden;
 }
@@ -660,11 +639,6 @@ div#portfoliolist {
 	padding: 0em 0 0em;
 }
 
-/* .tab_box {
-	background: #fd926d;
-	padding: 2em;
-} */
-
 .top1 {
 	margin-top: 2%;
 }
@@ -747,17 +721,10 @@ h2.resp-accordion {
 
 .about-header h3 {
 	font-size: 2.5em;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #2B2B2B;
 }
-
-/* .about-header h3 span {
-	color: #386641;
-	;
-
-} */
 
 .about-imag {
 	float: left;
@@ -778,6 +745,7 @@ h2.resp-accordion {
 	float: left;
 	width: 65%;
 	margin-top: 3%;
+	text-align: justify;
 }
 
 .about-text p {
@@ -842,15 +810,10 @@ h2.resp-accordion {
 
 .contact-header h3 {
 	font-size: 2.5em;
-	/* font-family: 'Arvo', serif; */
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #333333;
 }
-
-/* .contact-header h3 span {
-	color: #fefefe;
-} */
 
 .contact-header p {
 	line-height: 1.5em;
@@ -1254,7 +1217,11 @@ h2.resp-accordion {
 
 	.about-text p {
 		height: 65px;
-		overflow: hidden;
+		overflow: visible;
+	}
+
+	.paragraph-2 {
+		display: none;
 	}
 
 	.about-sectiongrids {
@@ -1345,7 +1312,6 @@ h2.resp-accordion {
 		display: block;
 		float: none;
 		margin: 0em;
-		/* border-bottom: 1px solid #4B6075; */
 		border-right: none;
 	}
 
@@ -1457,7 +1423,15 @@ h2.resp-accordion {
 
 	.about-text p {
 		height: 46px;
-		overflow: hidden;
+		overflow: visible;
+	}
+
+	.paragraph-2 {
+		display: none;
+	}
+
+	.about-header {
+		display: inline-block;
 	}
 
 	.about-header h3 {
@@ -1471,6 +1445,7 @@ h2.resp-accordion {
 		height: 100px;
 		object-fit: cover;
 		object-position: center 25%;
+		align-items: center;
 	}
 
 	.poll-desc h4 {
@@ -1557,9 +1532,8 @@ h2.resp-accordion {
 	}
 
 	.logo h1 {
-		/* width: 80%; */
 		font-size: 1.5em;
-		color: #ef664d;
+		color: #BC4749;
 	}
 
 	.top-menu ul {
@@ -1661,6 +1635,14 @@ h2.resp-accordion {
 		top: 30%;
 	}
 
+	.about-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 50%;
+	}
+
 	.about-header h3 {
 		font-size: 01.4em;
 	}
@@ -1672,12 +1654,12 @@ h2.resp-accordion {
 		height: 120px;
 		object-fit: cover;
 		object-position: center 25%;
+		margin: 2rem 0;
 	}
 
 	.about-text {
-		float: left;
-		width: 64%;
-		margin-top: 4%;
+		width: 85%;
+		text-align: justify;
 	}
 
 	.poll-desc h4 {
@@ -1841,7 +1823,6 @@ h2.resp-accordion {
 
 	.about-text p {
 		height: 37px;
-		overflow: hidden;
 		font-size: 0.9em;
 	}
 
@@ -1851,7 +1832,6 @@ h2.resp-accordion {
 	}
 
 	.about-text {
-		width: 61%;
 		margin-top: 4%;
 	}
 
