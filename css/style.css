@@ -274,11 +274,19 @@ ul.wmuSliderPagination {
 	padding: 0 22px;
 }
 
+.services-grid img {
+	width: 90px;
+}
+
 .arrow1 {
+	/* width: 10%; */
 	padding-top: 30px;
 	text-align: center;
 }
 
+.arrow1 img, .arrow img {
+	width: 4rem;
+}
 .works-section {
 	padding: 3em 0;
 	background: #F2E8CF;
@@ -908,7 +916,7 @@ h2.resp-accordion {
 
 .contact {
 	padding-bottom: 4em;
-	border-bottom: 1px solid#BC4749;
+	border-bottom: 1px solid #6A994E;
 }
 
 .contactgrid {
@@ -920,7 +928,7 @@ h2.resp-accordion {
 	background: none;
 	outline: none;
 	border: none;
-	border-bottom: 1px solid#BC4749;
+	border-bottom: 1px solid #6A994E;
 	font-size: 15px;
 	color: #2B2B2B;
 	text-transform: capitalize;
@@ -933,7 +941,7 @@ h2.resp-accordion {
 	outline: none;
 	border: none;
 	resize: none;
-	border-bottom: 1px solid#BC4749;
+	border-bottom: 1px solid #6A994E;
 	font-size: 15px;
 	color: #2B2B2B;
 	text-transform: capitalize;
@@ -946,7 +954,7 @@ h2.resp-accordion {
 }
 
 .contactgrid2 input[type="submit"] {
-	color: #BC4749;
+	color: #6A994E;
 	background: none;
 	border: none;
 	font-size: 15px;
@@ -972,7 +980,7 @@ h2.resp-accordion {
 
 .footer-bottom a {
 	font-size: 19px;
-	color: #BC4749;
+	color: #6A994E;
 	font-weight: 400;
 	text-transform: capitalize;
 }
@@ -989,14 +997,15 @@ h2.resp-accordion {
 	display: none;
 	text-decoration: none;
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	overflow: hidden;
-	width: 48px;
-	height: 48px;
+	bottom: 50px;
+	right: 50px;
+	overflow: visible;
+	width: 40px;
+	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/to-top2.png") no-repeat 0px 0px;
+	background: url("../images/arrow-up.png") no-repeat 0px 0px;
+	background-size: cover;
 }
 
 /*-- responsive-mediaquries --*/
