@@ -254,6 +254,7 @@ ul.wmuSliderPagination {
 	font-size: 15px;
 	color: #1C1C1C;
 	padding: 25px 0;
+	text-align: justify;
 }
 
 .services-sectiongrids {
@@ -272,6 +273,7 @@ ul.wmuSliderPagination {
 	font-size: 15px;
 	color: #1C1C1C;
 	padding: 0 22px;
+	text-align: justify;
 }
 
 .services-grid img {
@@ -308,7 +310,7 @@ ul.wmuSliderPagination {
 
 .works-header p {
 	line-height: 1.5em;
-
+	text-align: justify;
 	font-size: 15px;
 	color: #1C1C1C;
 	padding: 25px 0;
@@ -488,11 +490,12 @@ ul.wmuSliderPagination {
 	width: 40px;
 	height: 40px;
 	text-indent: -9999px;
-	background: url(../images/img-sprite.png)no-repeat 0px 0px;
+	background: url(../images/sprite.png)no-repeat 0px 0px;
 	top: 35%;
 	z-index: 2;
 	cursor: pointer;
 }
+
 
 .wmuSliderNext {
 	background-position: -360px 0px;
@@ -592,7 +595,7 @@ ul.wmuSliderPagination {
 	top: 0px;
 	width: 290px;
 	height: 85%;
-	background: url(../images/zoom-icon.png) center center no-repeat;
+	background: url(../images/magnifying-glass.png) center center no-repeat;
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
@@ -622,11 +625,11 @@ ul.wmuSliderPagination {
 	margin: 0px 1% 2% 0;
 }
 
-div#portfoliolist {
+/* div#portfoliolist {
 	padding: 20px 20px 0 20px;
 	background: url("../images/left.png") no-repeat;
 	background-size: 100% 100%;
-}
+} */
 
 .portfolio-wrapper {
 	overflow: hidden;
@@ -833,88 +836,48 @@ h2.resp-accordion {
 	padding: 25px 0;
 }
 
-.social-icon {
+.social-section {
+	display: flex;
+	justify-content: center;
 	text-align: center;
-	padding: 30px 0;
+	padding: 30px 0px;
+	gap: 20px;
 }
 
-.social-icon i {
+.social-icon {
+	display: block;
+	position: relative;
 	width: 40px;
 	height: 40px;
-	background: url("../images/img-sprite.png") no-repeat 0px 0px;
-	display: inline-block;
+	/* margin: auto 50px; */
 }
 
-.social-icon i:hover {
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
+.social-section i {
+	position: relative;
+	display: block;
+	width: 100%;
+    height: 100%;
 }
 
-.social-icon a i.icon1 {
-	background-position: 0px 0px;
+.social-icon img {
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.3s ease-in-out;
 }
 
-.social-icon a i.icon1:hover {
-	background-position: 0px -40px;
+.social-icon i img:nth-child(2) {
+    opacity: 0;
 }
 
-.social-icon a i.icon2 {
-	background-position: -40px 0px;
+.social-icon:hover i img:nth-child(2) {
+    opacity: 1;
 }
 
-.social-icon a i.icon2:hover {
-	background-position: -40px -40px;
-}
-
-.social-icon a i.icon3 {
-	background-position: -80px 0px;
-}
-
-.social-icon a i.icon3:hover {
-	background-position: -80px -40px;
-}
-
-.social-icon i.icon4 {
-	background-position: -120px 0px;
-}
-
-.social-icon a i.icon4:hover {
-	background-position: -120px -40px;
-}
-
-.social-icon i.icon5 {
-	background-position: -160px 0px;
-}
-
-.social-icon a i.icon5:hover {
-	background-position: -160px -40px;
-}
-
-.social-icon i.icon6 {
-	background-position: -200px 0px;
-}
-
-.social-icon a i.icon6:hover {
-	background-position: -200px -40px;
-}
-
-.social-icon i.icon7 {
-	background-position: -240px 0px;
-}
-
-.social-icon a i.icon7:hover {
-	background-position: -240px -40px;
-}
-
-.social-icon i.icon8 {
-	background-position: -280px 0px;
-}
-
-.social-icon a i.icon8:hover {
-	background-position: -280px -40px;
+.social-icon:hover i img:nth-child(1) {
+    opacity: 0;
 }
 
 .contact {
@@ -1260,9 +1223,9 @@ h2.resp-accordion {
 		padding: 15px 0;
 	}
 
-	.social-icon {
+	/* .social-icon {
 		padding: 20px 0;
-	}
+	} */
 
 	.contactgrid {
 		padding-bottom: 1em;
@@ -1486,8 +1449,9 @@ h2.resp-accordion {
 		font-size: 0.9em;
 	}
 
-	.social-icon {
-		padding: 15px 0;
+	.social-icon i {
+		width: 70%;
+		height: 70%;
 	}
 
 	.contactgrid {
@@ -1885,82 +1849,6 @@ h2.resp-accordion {
 		padding: 15px 0px;
 	}
 
-	.social-icon {
-		padding: 10px 0;
-	}
-
-	.social-icon i {
-		width: 30px;
-		height: 30px;
-		background: url("../images/img-sprite.png") no-repeat 0px 0px;
-		display: inline-block;
-		background-size: 420px;
-	}
-
-	.social-icon a i.icon1 {
-		background-position: -3px -3px;
-	}
-
-	.social-icon a i.icon1:hover {
-		background-position: -3px -33px;
-	}
-
-	.social-icon a i.icon2 {
-		background-position: -36px -3px;
-	}
-
-	.social-icon a i.icon2:hover {
-		background-position: -36px -34px;
-	}
-
-	.social-icon a i.icon3 {
-		background-position: -70px -3px;
-	}
-
-	.social-icon a i.icon3:hover {
-		background-position: -70px -34px;
-	}
-
-	.social-icon i.icon4 {
-		background-position: -103px -3px;
-	}
-
-	.social-icon a i.icon4:hover {
-		background-position: -103px -34px;
-		;
-	}
-
-	.social-icon i.icon5 {
-		background-position: -137px -3px;
-	}
-
-	.social-icon a i.icon5:hover {
-		background-position: -137px -34px;
-	}
-
-	.social-icon i.icon6 {
-		background-position: -170px -3px;
-	}
-
-	.social-icon a i.icon6:hover {
-		background-position: -170px -34px;
-	}
-
-	.social-icon i.icon7 {
-		background-position: -204px -3px;
-	}
-
-	.social-icon a i.icon7:hover {
-		background-position: -204px -34px;
-	}
-
-	.social-icon i.icon8 {
-		background-position: -237px -3px;
-	}
-
-	.social-icon a i.icon8:hover {
-		background-position: -237px -34px;
-	}
 
 	.footer-bottom p {
 		font-size: 13px;
