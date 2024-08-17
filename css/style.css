@@ -313,7 +313,9 @@ ul.wmuSliderPagination {
 	text-align: justify;
 	font-size: 15px;
 	color: #1C1C1C;
-	padding: 25px 0;
+	padding: 25px 5%;
+	/* margin: auto; */
+
 }
 
 .portfolio-section {
@@ -834,6 +836,7 @@ h2.resp-accordion {
 	font-size: 15px;
 	color: #2B2B2B;
 	padding: 25px 0;
+	text-align: justify;
 }
 
 .social-section {
@@ -1478,6 +1481,10 @@ h2.resp-accordion {
 		padding: 20px 0px;
 	}
 
+	/* .contact-header {
+		margin: auto;
+	} */
+
 	.contact-header h3 {
 		font-size: 1.5em;
 	}
@@ -1613,7 +1620,6 @@ h2.resp-accordion {
 	}
 
 	.services-header p {
-
 		height: 66px;
 		overflow: hidden;
 	}
@@ -1695,9 +1701,8 @@ h2.resp-accordion {
 	}
 
 	.contact-header p {
-
-		height: 66px;
-		overflow: hidden;
+		height: 50%;
+		margin: auto;
 	}
 
 	.contact-header p {
